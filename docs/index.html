@@ -12,6 +12,9 @@
     }
     .hint { color: #666; font-size: 0.9rem; }
     code { font-size: 0.85rem; word-break: break-all; }
+    ol.steps { padding-left: 1.25rem; }
+    ol.steps li { margin: 0.35rem 0; }
+    h2 { font-size: 1.1rem; margin-top: 1.75rem; }
   </style>
 </head>
 <body>
@@ -21,6 +24,18 @@
   <p><a class="install" href="itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fstanislav-reheda.github.io%2Fnativescapes-ios-releases%2Fmanifest.plist">Установить приложение</a></p>
   <p class="hint">Если кнопка не срабатывает, скопируй ссылку в Safari вручную:</p>
   <p><code>itms-services://?action=download-manifest&amp;url=https%3A%2F%2Fstanislav-reheda.github.io%2Fnativescapes-ios-releases%2Fmanifest.plist</code></p>
+
+  <h2>После установки: доверие корпоративному приложению</h2>
+  <p class="hint">Если при запуске пишет, что разработчику нельзя доверять — это нормально для In-House. Нужно один раз подтвердить доверие в настройках (это не «сертификат сайта», а подпись приложения).</p>
+  <ol class="steps">
+    <li>Открой <strong>Настройки</strong>.</li>
+    <li>Раздел <strong>Основные</strong>.</li>
+    <li>Найди <strong>VPN и управление устройством</strong> (в старых версиях iOS может называться <strong>Профили и управление устройством</strong> или <strong>Управление устройством</strong>).</li>
+    <li>В блоке <strong>Корпоративное приложение</strong> выбери строку с названием организации (например, издатель Enterprise-сертификата).</li>
+    <li>Нажми <strong>Доверять «…»</strong> и подтверди <strong>Доверять</strong>.</li>
+  </ol>
+  <p class="hint">Если пункта нет — установка могла не завершиться; дождись окончания загрузки или установи сборку заново, затем снова зайди в этот раздел настроек.</p>
+
   <hr />
   <p><a href="https://github.com/stanislav-reheda/nativescapes-ios-releases/releases">Релизы и IPA на GitHub</a></p>
 </body>
